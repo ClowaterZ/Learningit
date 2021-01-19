@@ -309,7 +309,7 @@ def fedgan(x_train, y_train, num_obj2, havemodel=False):
         gen_list.append(generator)
         com_list.append(combined)
     if havemodel:
-        total_turn = 500
+        total_turn = 2000
         gen_path = os.path.join(os.getcwd(), "models", "TrainAndGen", "nsga2", "generator")
         discri_path = os.path.join(os.getcwd(), "models", "TrainAndGen", "nsga2", "discriminator")
         for i in range(num_client):

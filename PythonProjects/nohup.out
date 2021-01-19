@@ -1,0 +1,42 @@
+2021-01-14 23:49:11.053986: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-01-14 23:49:11.675792: E tensorflow/stream_executor/cuda/cuda_driver.cc:300] failed call to cuInit: CUDA_ERROR_UNKNOWN: unknown error
+2021-01-14 23:49:11.680337: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:150] kernel driver does not appear to be running on this host (zy2006246): /proc/driver/nvidia/version does not exist
+2021-01-14 23:49:42.765599: W tensorflow/core/framework/allocator.cc:122] Allocation of 16793280 exceeds 10% of system memory.
+2021-01-14 23:49:42.769811: W tensorflow/core/framework/allocator.cc:122] Allocation of 16793280 exceeds 10% of system memory.
+2021-01-14 23:49:42.882464: W tensorflow/core/framework/allocator.cc:122] Allocation of 16793280 exceeds 10% of system memory.
+2021-01-14 23:49:42.885618: W tensorflow/core/framework/allocator.cc:122] Allocation of 16793280 exceeds 10% of system memory.
+2021-01-14 23:49:47.982305: W tensorflow/core/framework/allocator.cc:122] Allocation of 40140800 exceeds 10% of system memory.
+/usr/local/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+/usr/local/anaconda3/lib/python3.6/site-packages/keras/engine/training.py:490: UserWarning: Discrepancy between trainable weights and collected trainable weights, did you set `model.trainable` without calling `model.compile` after ?
+  'Discrepancy between trainable weights and collected trainable'
+Traceback (most recent call last):
+  File "nsga2_t&g_data_aug.py", line 472, in <module>
+    nsga2(X_train, Y_train, X_test, Y_test)
+  File "nsga2_t&g_data_aug.py", line 207, in nsga2
+    generator, discriminator = fedgan(x_train, y_train, num_obj2)
+  File "nsga2_t&g_data_aug.py", line 347, in fedgan
+    d_loss_real = discri_list[i].train_on_batch(imgs, [valid, labels])
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/keras/engine/training.py", line 1217, in train_on_batch
+    outputs = self.train_function(ins)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2697, in __call__
+    if hasattr(get_session(), '_make_callable_from_options'):
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 199, in get_session
+    [tf.is_variable_initialized(v) for v in candidate_vars])
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt
+2021-01-14 23:54:02.957410: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-01-14 23:54:02.983557: E tensorflow/stream_executor/cuda/cuda_driver.cc:300] failed call to cuInit: CUDA_ERROR_UNKNOWN: unknown error
+2021-01-14 23:54:02.983602: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:150] kernel driver does not appear to be running on this host (zy2006246): /proc/driver/nvidia/version does not exist
